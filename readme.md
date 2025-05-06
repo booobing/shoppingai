@@ -1,4 +1,3 @@
-
 # 지능형 레시피 안내 및 마트 재료 매칭 시스템
 
 ## 1. 프로젝트 개요
@@ -127,14 +126,41 @@
     ```
     `requirements.txt` 예시:
     ```
-    transformers
-    sentence-transformers
-    faiss-cpu
-    torch
-    numpy
-    thefuzz
-    python-Levenshtein # thefuzz의 Levenshtein 기능을 위해 필요할 수 있음
+    certifi==2025.4.26
+    charset-normalizer==3.4.2
+    colorama==0.4.6
+    filelock==3.18.0
+    fsspec==2025.3.2
+    huggingface-hub==0.30.2
+    idna==3.10
+    Jinja2==3.1.6
+    joblib==1.5.0
+    MarkupSafe==3.0.2
+    mpmath==1.3.0
+    networkx==3.4.2
+    numpy>=1.24.0
+    packaging==25.0
+    pillow==11.2.1
+    PyYAML==6.0.2
+    regex>=2023.0.0
+    requests==2.32.3
+    safetensors==0.5.3
+    scikit-learn>=1.3.0
+    scipy==1.15.2
+    sentence-transformers>=2.2.2
+    setuptools==80.2.0
+    sympy==1.14.0
+    threadpoolctl==3.6.0
+    tokenizers==0.21.1
+    torch>=2.0.0
+    tqdm==4.67.1
+    transformers>=4.35.0
+    typing_extensions==4.13.2
+    urllib3==2.4.0
+    faiss-cpu>=1.7.4
+    konlpy>=0.6.0
     ```
+    ※ 만약 어휘적 유사도 기능이 필요하다면 `thefuzz`, `python-Levenshtein`도 추가 설치하세요.
 
 4.  **`materials.json` 준비:**
     프로젝트 루트 디렉토리에 위에서 설명한 형식의 `materials.json` 파일을 준비합니다. 실제 마트의 재료 목록과 위치 코드를 반영해야 합니다.
